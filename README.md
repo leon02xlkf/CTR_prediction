@@ -69,22 +69,8 @@ We apply random feature masking and contrastive loss to pretrain the dual-tower 
 python src/self_supervised/train_masked_tower.py
 ```
 
-## Evaluation Metrics
-- **Recall@K** for recall quality.  
-- **NDCG@K**, **MAP@K** for ranking performance.  
-
-Detailed experiments and visualizations are available in `notebooks/`.
-
-## Results
-- **Offline**: Recall@100 = 0.75, NDCG@10 = 0.32.  
-- **Online A/B Test**: 12% increase in click-through rate compared to baseline.
-
 ## Future Work
 - Integrate reinforcement learning for long-term user satisfaction.  
 - Incorporate real-time streaming features (Flink/Spark Streaming).  
 - Explore multi-modal fusion with knowledge graphs and user profiles.
-
----
-**Maintainer**: Your Name (<you@example.com>)  
-**License**: MIT License
 
